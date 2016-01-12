@@ -1,0 +1,23 @@
+{
+  "name": "snapshot-application",
+  "version": "1.0.0",
+  "description": "Snapshot Application ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raju",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "excel-export": "^0.4.1",
+    "express": "^4.13.3",
+    "hogan.js": "^3.0.2",
+    "json2xls": "0.0.5",
+    "morgan": "^1.6.1",
+    "node-xlsx": "^0.6.0",
+    "oracledb": "^1.2.0",
+    "sendgrid": "^1.9.2",
+    "xlsx-writestream": "^0.4.0"
+  }
+}

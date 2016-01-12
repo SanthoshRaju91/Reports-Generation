@@ -1,0 +1,49 @@
+<div ng-if="error" class="alert alert-dismissible alert-danger">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <span ng-if = "errorMessage">
+	  <strong>Error!</strong> {{errorMessage}}
+  </span>
+  <span ng-if = "!errorMessage">
+	  <strong>Error!</strong> Please try submitting again later. If the error still appears, drop a mail to snagaraj@wm.com.
+  </span>  
+</div>
+
+<div class = "jumbotron custom-report">
+	<h3>Custom Report Request</h3>
+	<p>
+		Would you like to have a your own report generator added to the application, to help your process?
+		<br>
+		Please fill out the request, our team will get in touch with you for the custom report.
+	</p>	
+	<form class="form-horizontal">
+		<fieldset>
+			<br>		
+			<div class = "form-group">
+				<label for="name" class="col-lg-2 control-label">Name</label>
+				 <div class="col-lg-5">
+					<input type="text" class="form-control" id="name" placeholder="Name" required="Name field is required" ng-model="request.name">					
+				</div>				
+			</div>			
+			<div class="form-group">				 
+				 <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+				 <div class="col-lg-5">
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email" required="E-mail field is required" ng-model="request.email">					
+				</div>			
+			</div>
+			 <div class="form-group">
+				<label for="textArea" class="col-lg-2 control-label">Requirement</label>
+				<div class="col-lg-10">
+					<textarea class="form-control" rows="3" id="textArea" ng-model="request.text"></textarea>
+					<span class="help-block">Please specify your requirement in the above text area.</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-10 col-lg-offset-2">
+					<a href="/#/" class="btn btn-default">Cancel</a>
+					<button type="submit" class="btn btn-success" style = "margin-left: 10px;" ng-click="submitRequest()">Submit</button>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+
